@@ -1,0 +1,193 @@
+/* Estilos del Menú */
+.menu {
+  background-color: #ffffff; 
+  padding: 20px; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 20px 0; 
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333333; 
+  font-weight: bold;
+  font-size: 1.5em; 
+  padding: 20px; 
+  border: 2px solid transparent; 
+  border-radius: 8px; 
+  transition: all 0.3s ease;
+  display: block; 
+  margin-bottom: 10px; 
+}
+
+.menu a:hover {
+  background-color: #f0f0f0; 
+  color: #ff6600; 
+  border-color: #ff6600; 
+  transform: translateY(-3px); 
+}
+
+.logo-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logo-container img {
+  max-width: 100px;
+  height: auto;
+  display: inline-block;
+}
+
+
+/* Estilos del Juego */
+body {
+  font-family: 'Arial Black', 'Comic Sans MS', cursive;
+  background: url('background.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 3em;
+  font-family: 'Roboto', sans-serif;
+  color: #ff6600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: slideUpDown 3s ease infinite;
+}
+
+@keyframes slideUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.contenedor-cuestionario {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+.contenedor-botones {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between; 
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  outline: none;
+  flex: 1; 
+}
+
+button:hover {
+  transform: translateY(-3px);
+}
+
+#boton-verdadero {
+  background-color: #4caf50;
+  color: white;
+}
+
+#boton-verdadero:hover {
+  background-color: #45a049;
+}
+
+#boton-falso {
+  background-color: #f44336;
+  color: white;
+}
+
+#boton-falso:hover {
+  background-color: #e53935;
+}
+
+#boton-reiniciar {
+  background-color: #ff9800;
+  color: white;
+}
+
+#boton-reiniciar:hover {
+  background-color: #fb8c00;
+}
+
+#boton-menu {
+  background-color: #03a9f4;
+  color: white;
+}
+
+#boton-menu:hover {
+  background-color: #039be5;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+#resultado p {
+  margin: 10px 0;
+}
+
+#puntuacion-final {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.puntuacion-excelente {
+  color: #4caf50;
+}
+
+.puntuacion-buena {
+  color: #8bc34a;
+}
+
+.puntuacion-regular {
+  color: #ff9800;
+}
+
+.puntuacion-mala {
+  color: #f44336;
+}
