@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUTORIAL</title>
+    <link rel="stylesheet" href="stylemateomarta.css">
+</head>
+<body>
+    <header class="header">
+        <img src="fotos/logo.png" class="foto-header">
+        <button class="menu-ham" id="menu-ham">&#9776;</button>
+        <ul class="buttons-header" id="buttons-header">
+            <li class="slogan">
+                ❤️Recuerda siempre, cuida tu memoria❤️
+            </li>
+            <li><a href="index.html"><button>Principal</button></a></li>
+            <li><a href="int.html"><button>Integrantes</button></a></li>
+            <li><a href="avances.html"><button>Avances</button></a></li>
+            <li><a href="juegos(n).html"><button>Juegos</button></a></li>
+        </ul>
+    </header>
+    <div class="contenedor-cuestionario">
+        <h1>TUTORIAL</h1>
+        <p>Este juego es un verdadero y falso que consta de 10 preguntas sobre el cuidado mental, para contestar solo deberás presionar el botón de verdadero o falso y sandra una leyenda que te dirá si es afirmativo o negativo.</p>
+        <p>Te recomendamos jugar el quiz después de haber leído los links adjuntados en la pagina de avances, ya que las preguntas fueron elaboradas en base a esa información presentada, además es una página muy informativa en la cual vas a descubrir nuevas cosas. Una vez leída toda la página, ahora sí, te recomendamos jugar al juego.</p>
+        <p>El sistema de puntuación se divide en 4:</p>
+        <p>→9 o 10 respuestas correctas: excelente.</p>
+        <p>→7 a 8 respuestas correctas: buen trabajo.</p>
+        <p>→5 a 6 respuestas correctas: sigue intentando.</p>
+        <p>→menos de 5 respuestas correctas: necesitas mejorar.</p>
+        <div class="logo-container">
+            <img src="fotos/logo.png" alt="Cuidemos la salud">
+        </div>
+        <div class="contenedor-botones">
+            <a href="juegomateomarta.html"><button id="boton-volver">menu principal</button></a>
+        </div>
+    </div>
+    <footer>
+        <p>© Derechos reservados - Sitio desarrollado para uso educativo - Diseño y Desarrollo Web - UADE 2024</p>
+        <img src="fotos/logo.png" class="footer_logo" alt="Footer Logo">
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-ham');
+            const menu = document.getElementById('buttons-header');
+        
+            menuToggle.addEventListener('click', function() {
+                menu.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
